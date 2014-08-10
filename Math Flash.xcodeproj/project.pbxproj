@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA56EF601996D99C002D9EF1 /* ArchiveButtonStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA56EF5F1996D99C002D9EF1 /* ArchiveButtonStates.swift */; };
+		AABF87D5198F2AE300D8DCB5 /* FlashCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABF87D4198F2AE300D8DCB5 /* FlashCardView.swift */; };
+		AABF882F198F542B00D8DCB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AABF882E198F542B00D8DCB5 /* Main.storyboard */; };
+		AAC250821990703400245C4B /* MathProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC250811990703400245C4B /* MathProblem.swift */; };
 		AAEB1DDF198ECA2D009579DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEB1DDE198ECA2D009579DD /* AppDelegate.swift */; };
-		AAEB1DE1198ECA2D009579DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEB1DE0198ECA2D009579DD /* ViewController.swift */; };
-		AAEB1DE4198ECA2D009579DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAEB1DE2198ECA2D009579DD /* Main.storyboard */; };
+		AAEB1DE1198ECA2D009579DD /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEB1DE0198ECA2D009579DD /* MasterView.swift */; };
 		AAEB1DE6198ECA2D009579DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAEB1DE5198ECA2D009579DD /* Images.xcassets */; };
 		AAEB1DF2198ECA2E009579DD /* Math_FlashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEB1DF1198ECA2E009579DD /* Math_FlashTests.swift */; };
 /* End PBXBuildFile section */
@@ -25,11 +28,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA56EF5F1996D99C002D9EF1 /* ArchiveButtonStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArchiveButtonStates.swift; path = ../ArchiveButtonStates.swift; sourceTree = "<group>"; };
+		AABF87D4198F2AE300D8DCB5 /* FlashCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCardView.swift; sourceTree = "<group>"; };
+		AABF882E198F542B00D8DCB5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AAC250811990703400245C4B /* MathProblem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathProblem.swift; sourceTree = "<group>"; };
 		AAEB1DD9198ECA2D009579DD /* Math Flash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Flash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAEB1DDD198ECA2D009579DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAEB1DDE198ECA2D009579DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AAEB1DE0198ECA2D009579DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AAEB1DE3198ECA2D009579DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAEB1DE0198ECA2D009579DD /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
 		AAEB1DE5198ECA2D009579DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AAEB1DEB198ECA2E009579DD /* Math FlashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Math FlashTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAEB1DF0198ECA2E009579DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +60,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA56EF6319972A89002D9EF1 /* Master View */ = {
+			isa = PBXGroup;
+			children = (
+				AAEB1DE0198ECA2D009579DD /* MasterView.swift */,
+				AA56EF5F1996D99C002D9EF1 /* ArchiveButtonStates.swift */,
+			);
+			name = "Master View";
+			sourceTree = "<group>";
+		};
+		AA56EF6419972A8F002D9EF1 /* Flash Card View */ = {
+			isa = PBXGroup;
+			children = (
+				AABF87D4198F2AE300D8DCB5 /* FlashCardView.swift */,
+				AAC250811990703400245C4B /* MathProblem.swift */,
+			);
+			name = "Flash Card View";
+			sourceTree = "<group>";
+		};
 		AAEB1DD0198ECA2D009579DD = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				AAEB1DDE198ECA2D009579DD /* AppDelegate.swift */,
-				AAEB1DE0198ECA2D009579DD /* ViewController.swift */,
-				AAEB1DE2198ECA2D009579DD /* Main.storyboard */,
+				AABF882E198F542B00D8DCB5 /* Main.storyboard */,
+				AA56EF6319972A89002D9EF1 /* Master View */,
+				AA56EF6419972A8F002D9EF1 /* Flash Card View */,
 				AAEB1DE5198ECA2D009579DD /* Images.xcassets */,
 				AAEB1DDC198ECA2D009579DD /* Supporting Files */,
 			);
@@ -189,8 +214,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAEB1DE4198ECA2D009579DD /* Main.storyboard in Resources */,
 				AAEB1DE6198ECA2D009579DD /* Images.xcassets in Resources */,
+				AABF882F198F542B00D8DCB5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,8 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAEB1DE1198ECA2D009579DD /* ViewController.swift in Sources */,
+				AABF87D5198F2AE300D8DCB5 /* FlashCardView.swift in Sources */,
+				AAEB1DE1198ECA2D009579DD /* MasterView.swift in Sources */,
 				AAEB1DDF198ECA2D009579DD /* AppDelegate.swift in Sources */,
+				AAC250821990703400245C4B /* MathProblem.swift in Sources */,
+				AA56EF601996D99C002D9EF1 /* ArchiveButtonStates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,17 +258,6 @@
 			targetProxy = AAEB1DEC198ECA2E009579DD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		AAEB1DE2198ECA2D009579DD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AAEB1DE3198ECA2D009579DD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AAEB1DF3198ECA2E009579DD /* Debug */ = {
@@ -395,6 +412,7 @@
 				AAEB1DF7198ECA2E009579DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AAEB1DF8198ECA2E009579DD /* Build configuration list for PBXNativeTarget "Math FlashTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +421,7 @@
 				AAEB1DFA198ECA2E009579DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
