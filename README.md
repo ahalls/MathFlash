@@ -16,4 +16,4 @@ view controller.
 
 2. Enabling persistence of user data between games with NSCoding.
 
-3. Use of special event handlers like segues and user alrt views (UIAlertview).
+3. Use of special event handlers like segues and user alert views (UIAlertview).
