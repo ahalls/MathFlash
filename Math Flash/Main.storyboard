@@ -296,7 +296,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="dUh-GP-Oru" eventType="touchUpInside" id="faM-yu-Xsa"/>
+                                    <action selector="stopTapped:" destination="dUh-GP-Oru" eventType="touchUpInside" id="DrV-EF-mWd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="f8F-6y-isV">

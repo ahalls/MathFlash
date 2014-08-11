@@ -15,6 +15,7 @@ class FlashCardView: UIViewController {
     var selectedLevel = 0
     var selectedTime:UInt8 = 0
     var selectedProblem = 0
+    var seconds:UInt8 = 0
     
     //Variables for getting new math problems
     var getNewProblem: MathProblem = MathProblem()
@@ -86,7 +87,19 @@ class FlashCardView: UIViewController {
     }
     
     
-    @IBAction func buttonTapped (sender : AnyObject) {
+    @IBAction func stopTapped (sender : AnyObject) {
+        if timeDisplayLabel.text == "Time Is Up!" {
+            self.performSegueWithIdentifier("MasterViewSegue", sender: self)
+        } else if timeDisplayLabel.text == "Finished" {
+            self.performSegueWithIdentifier("MasterViewSegue", sender: self)
+        } else if timeDisplayLabel.text == "100%"  {
+            self.performSegueWithIdentifier("MasterViewSegue", sender: self)
+        } else {
+            AlertView()
+        }
+    }
+    
+    func AlertView () {
         var alert = UIAlertController(title: "End mid-game?", message: "", preferredStyle: UIAlertControllerStyle.Alert)
         self.presentViewController(alert, animated: true, completion: nil)
         alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.Default, handler: { action in
@@ -109,7 +122,6 @@ class FlashCardView: UIViewController {
                 break
             }
         }))
-        
     }
     
     //call the MathProblem model and get a new problem
@@ -142,6 +154,8 @@ class FlashCardView: UIViewController {
             timeLeft.enabled = false
             if correctAnswerCounter == selectedProblem {
                 timeDisplayLabel.text = "100%"
+            } else if selectedProblem == problemCounter {
+                timeDisplayLabel.text = "Finished"
             }
             else {
                 timeDisplayLabel.text = "Time Is Up!"
@@ -173,7 +187,7 @@ class FlashCardView: UIViewController {
     func updateTime() {
         var currentTime = NSDate.timeIntervalSinceReferenceDate()
         var elapsedTime: NSTimeInterval = currentTime - startTime
-        let seconds = selectedTime-UInt8(elapsedTime)
+        seconds = selectedTime-UInt8(elapsedTime)
         if seconds > 0 {
             elapsedTime -= NSTimeInterval(seconds)
             timeDisplayLabel.text = "\(seconds)"
